@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -12,8 +14,8 @@ export default function RootLayout({
             gap: "1rem",
           }}
         >
-          <a href="/">Page with Data (/)</a>
-          <a href="/no-data">Page with No Data (/no-data)</a>
+          <Link href="/">Page with Data (/)</Link>
+          <Link href="/no-data">Page with No Data (/no-data)</Link>
         </nav>
         {children}
       </body>
